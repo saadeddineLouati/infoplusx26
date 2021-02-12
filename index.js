@@ -1,5 +1,5 @@
 const express = require('express')
-const bod = require('body-Parser')
+const bod = require('body-parser')
 const app = express()
 const mongoose = require('mongoose');
 const Country = require('./models/country');
