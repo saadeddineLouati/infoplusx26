@@ -26,9 +26,7 @@ app.post('/', async (req, res) => {
             res.send(error)
         })
 })
-app.listen(5000, () => {
-    console.log('server mrigel wel port mrigel', 5000)
-})
+
 app.put('/:identifiant', async (req, res) => {
     let identifiant = req.params.identifiant;
     let updateBody = req.body.country;
@@ -60,4 +58,8 @@ app.get('/', async (req, res) => {
         .catch(error => {
             res.send(error)
         })
+})
+
+app.listen(5000, () => {
+    console.log('server mrigel wel port mrigel', 5000)
 })
